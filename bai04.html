@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        let arr = [];
+        let number = prompt("element number of arr");
+        for (let i = 0; i < number; i++) {
+            x = parseInt(prompt("input number"));
+            arr[i] = x;
+        }
+        let first =  0;
+        let last =  arr.length-1;
+        while (first<last) {
+            let temp = arr[first];
+            arr[first] = arr[last];
+            arr[last] = temp;
+            first++;
+            last--
+        }
+        alert(arr)
+    </script>
+</body>
+</html>

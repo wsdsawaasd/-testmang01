@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let number = prompt("element number of arr");
+    for (let i = 0; i < number; i++) {
+        x = parseInt(prompt("input number"));
+        arr[i] = x;
+    }
+    let max = arr[0];
+    for (let j = 1; j < arr.length; j++) {
+        if (arr[j] > max) {
+            max = arr[j];
+        }
+    }
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum = sum + arr[i]
+    }
+    let avg = sum / arr.length;
+    alert(max + " is max value " + " / " + avg + " is avg value ");
+</script>
+</body>
+</html>

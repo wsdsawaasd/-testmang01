@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        x = prompt("input random");
+        arr[i] = x;
+    }
+    let time = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === 'V') {
+            time = time + 1
+        }
+    }
+    if (time > 0) {
+        alert(" V is in the array");
+    } else {
+        alert(" V is not in the array")
+    }
+</script>
+</body>
+</html>
